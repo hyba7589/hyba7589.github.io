@@ -1,0 +1,30 @@
+/* General styles - put these straight into your stylesheet */
+
+body {
+    margin: 0;
+  }
+  
+  html {
+    font-family: sans-serif;
+    font-size: 10px;
+    background-image: url("RM.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .pic {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .text p {
+    position: absolute;
+    left: 60%;
+    top: 60%;
+    color: blue;
+    text-align: center;
+    font-size: 20px;
+  }
