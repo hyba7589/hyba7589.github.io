@@ -1,0 +1,52 @@
+body{
+    background-color: khaki;
+}
+#box1{
+    width: 25vw;
+    height: 20vh;
+    background-color: indianred;
+    transition: background-color 1s;
+}
+
+
+#box1:hover {
+    background-color: purple;
+}
+
+#box2{
+    width: 25vw;
+    height:20vh;
+    position: relative;
+    background-color: orangered;
+    animation-name: schmove;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes schmove{
+    0% {
+        /* translate: 0 0; */
+        top: 0;
+        left: 0;
+    }
+    25% {
+        /* translate: 50vw 0vw; */
+        top: 0;
+        left: 50vw;
+    }
+    50% {
+        /* translate: 50vw 25vw; */
+        top: 50vh;
+        left: 50vw;
+    }
+    75% {
+        /* translate: 0 25vw; */
+        top: 50hv;
+        left: 0vw;
+    }
+    100% {
+        /* translate: 0 0; */
+        top: 0vh;
+        left: 0vw;
+    }
+}
