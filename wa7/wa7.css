@@ -2,7 +2,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: chocolate;
+    background-color: #F38417;
 }
 nav{
     height: 50vh;
@@ -10,19 +10,68 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     height:20px;
-    background-color: violet;
+    background-color: navy;
+    transition: background-color 2s;
 }
+
+nav:hover {
+    background-color: blue;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 nav a{
     width:10vw;
     text-align: center;
     text-decoration: none;
-    color:darkgreen;
+    color:coral;
+    transition: color;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
 
 img{
     width:30vw;
     height: 30vh;
+}
+
+#Courtland{
+    width: 30vw;
+    height: 20vh;
+    position: relative;
+    text-align: center;
+    background-color: white;
+    animation-name: schmove;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+#Courtland h1{
+    color: navy;
+}
+
+@keyframes schmove{
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        top: 0;
+        left: 30vw;
+    }
+    50% {
+        top: 30vh;
+        left: 30vw;
+    }
+    75% {
+        top: 30hv;
+        left: 0vw;
+    }
+    100% {
+        top: 0vh;
+        left: 0vw;
+    }
 }
 
 #red-ball{
