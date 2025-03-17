@@ -32,7 +32,7 @@ body {
     top: 0;
     z-index: 1000;
   }
-  
+  /* try to put it at the side */
   nav ul {
     margin: 0;
     padding: 0;
