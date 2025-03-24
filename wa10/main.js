@@ -6,7 +6,7 @@ function randomValueFromArray(array){
   const random = Math.floor(Math.random()*array.length);
   return array[random];
 }
-const storyText = 'It a nice day in the Mushroom Kingdom, so :insertx: went outside to stroll around. Once :inserty: was reached, they realized how far away they were. They decided to go back, when they :insertz:. Luigi witness this nearby, because he happened to be walking around as well. :insertx: happily greeted him, and the two of them began the long journey back.'
+const storyText = 'It was a nice day in the Mushroom Kingdom, so :insertx: went outside to stroll around. Once :inserty: was reached, they realized how far away they were. They decided to go back, when they :insertz:. Luigi witness this nearby, because he happened to be walking around as well. :insertx: happily greeted him, and the two of them began the long journey back.'
 
 const insertX = ['Mario',
 'Princess Peach',
