@@ -13,7 +13,7 @@ console.log("Problem 1", employeesData);
 
 const companyDetails = {
     "details":[
-        {"companyName":"Tech Stars", "website":"www.techstars.site", "employees":employeesData}
+        {"companyName":"Tech Stars", "website":"www.techstars.site", "Employees":employeesData}
 ]
 };
 console.log("Problem 2", companyDetails);
