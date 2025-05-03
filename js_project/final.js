@@ -12,7 +12,16 @@ const conversion = {
     'eight': '8',
     'nine': '9'
 };
+const resetter = document.getElementById('reset_button');
 let phoneNumber = [];
+resetter.addEventListener('click', function () {
+    phoneNumber = [];
+    inputField.value = '';
+    let display = document.getElementById('output');
+    if (display) {
+        display.textContent = 'Phone number: ';
+    }
+});
 inputField.addEventListener('input', function () {
     const currentNumber = inputField.value.toLowerCase();
     let validity = false;
