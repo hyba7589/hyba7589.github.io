@@ -15,11 +15,16 @@ const conversion = {
 const resetter = document.getElementById('reset_button');
 let phoneNumber = [];
 resetter.addEventListener('click', function () {
+    inputField.disabled = false;
     phoneNumber = [];
     inputField.value = '';
     let display = document.getElementById('output');
     if (display) {
         display.textContent = 'Phone number: ';
+    }
+    const happycat = document.getElementById('happycat');
+    if (happycat) {
+        happycat.remove();
     }
 });
 inputField.addEventListener('input', function () {
@@ -54,6 +59,7 @@ inputField.addEventListener('input', function () {
         if(!celebrate) {
             const gifs = document.createElement('img');
             gifs.src = 'happycat.gif';
+            gifs.id = 'happycat';
             if(display){
                 display.insertAdjacentElement('afterend', gifs);
             }
