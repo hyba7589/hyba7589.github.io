@@ -50,6 +50,14 @@ inputField.addEventListener('input', function () {
     if(phoneNumber.length == 10){
         inputField.disabled = true;
         display.textContent = "Phone number: " + phoneNumber.join('');
+        let celebrate = document.getElementById('happycat');
+        if(!celebrate) {
+            const gifs = document.createElement('img');
+            gifs.src = 'happycat.gif';
+            if(display){
+                display.insertAdjacentElement('afterend', gifs);
+            }
+        }
         return;
     }
 });
